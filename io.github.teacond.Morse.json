@@ -57,7 +57,7 @@
                 {
                     "type": "git",
                     "url": "https://github.com/teacond/Morse",
-                    "tag": "v1.0.5"
+                    "tag": "v1.0.6"
                 },
                 "cargo-sources.json",
 		{
