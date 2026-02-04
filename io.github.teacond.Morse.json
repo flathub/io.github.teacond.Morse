@@ -22,30 +22,7 @@
             "CARGO_NET_OFFLINE": "true"
         }
     },
-    "cleanup" : [
-        "/include",
-        "/lib/pkgconfig",
-        "/man",
-        "/share/doc",
-        "/share/gtk-doc",
-        "/share/man",
-        "/share/pkgconfig",
-        "*.la",
-        "*.a"
-    ],
     "modules" : [
-        {
-            "name": "blueprint-compiler",
-            "buildsystem": "meson",
-            "cleanup": ["*"],
-            "sources": [
-                {
-                "type": "git",
-                "url": "https://gitlab.gnome.org/GNOME/blueprint-compiler",
-                "tag": "v0.18.0"
-                }
-            ]
-        },
         {
             "name" : "morse",
             "builddir" : true,
@@ -60,7 +37,7 @@
                     "tag": "v1.0.6"
                 },
                 "cargo-sources.json",
-		{
+                {
             	    "type": "shell",
                     "commands": [
                         "mkdir -p .cargo",
